@@ -1,34 +1,15 @@
 ---
 layout: default
 ---
-<div class="post">
-    <h3><a href="{{ post.url }}">{{ page.title }}</a></h3>
-  
-    <div class="body">
-        {{ content }}
-    </div>
-    
-    <div class="meta">
-        Posted on <a href="{{ page.url }}">{{ page.date | date_to_string }}</a>
-    </div>
-    
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'YOUR_DISQUS_SHORTNAME'; // required: replace example with your forum shortname
+<div id="post">
+{{ content }}
+</div>
 
-        // The following are highly recommended additional parameters. Remove the slashes in front to use.
-        // var disqus_identifier = 'unique_dynamic_id_1234';
-        var disqus_url = 'YOUR_BASE_URL{{ page.url }}';
-        //var disqus_developer = 1; // developer mode is on
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    {% for post in site.related_posts limit:3 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
