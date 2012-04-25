@@ -1,0 +1,33 @@
+--- 
+layout: page
+title: About YOUR_NAME
+---
+
+<div class="my_pic">
+    <img src="/images/me.png">
+</div>
+
+<div class="about_head">
+    <p>blah blah blah blah blady blah blah</p>
+        
+</div>
+
+<h3>My Projects</h3>
+
+<div class="projects_container">
+    <table class="projects">
+        <tr>
+            <td class="img">
+                <a href="project_url"><img src="/images/project.png" /></a>
+            </td>
+        
+            <td class="desc">
+                <div class="bubble">
+                    <div class="tip"></div>
+                    <strong><a href="project_url">example.com</a></strong> &mdash; My project that does bla bla.
+                </div>
+            </td>
+        </tr>
+       
+    </table>
+</div>

@@ -1,0 +1,7 @@
+markdown: rdiscount
+auto: true
+permalink: pretty
+exclude:
+  - Rakefile
+  - Gemfile
+  - .gitignore

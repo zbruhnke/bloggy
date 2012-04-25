@@ -1,0 +1,9 @@
+Description:
+    The generator allows you to create a Jekyll blog within your rails app.
+    The default [NAME] called blog
+
+Example:
+    rails generate jekyll:blog [NAME]
+
+    This will create:
+        public/[NAME]
