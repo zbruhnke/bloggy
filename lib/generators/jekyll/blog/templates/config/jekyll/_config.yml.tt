@@ -1,7 +1,6 @@
 markdown: rdiscount
 permalink: /:title.html
 auto: true
-permalink: pretty
 exclude:
   - Rakefile
   - Gemfile
