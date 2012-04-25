@@ -26,7 +26,7 @@ var WRInitTime=(new Date()).getTime();
 <div class="site">
   <div class="title">
     <a href="/blog">Zach Bruhnke</a>
-    <a class="extra" href="/blog{{ post.url }}">Jekyll Test</a>
+    <a class="extra" href="/blog">Jekyll Test</a>
   </div>
   
   {{ content }}
