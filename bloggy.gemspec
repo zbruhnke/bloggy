@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency "jekyll"
   s.add_dependency "rdiscount"
   s.add_dependency "rails"
+  s.add_dependency "rack-contrib"
 
   s.add_development_dependency('rake', "~> 0.9")
   s.add_development_dependency('rdoc', "~> 3.11")
