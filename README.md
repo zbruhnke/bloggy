@@ -1,16 +1,6 @@
 # Bloggy
 
-Bloggy is a simple gem that helps you generate a jekyll blog within your rails application by using generator commands you are used to.
-
-rails g jekyll:blog
-
-wrote a new blog post and would like to re-generate. same thing 
-
-rails g jekyll:blog [directory name] - Note if you name this anything besides blog the urls will be generated wrong(I plan on fixing this in the next update however)
-
-so best way to get your blog up and running in seconds is
-
-    $ rails g jekyll:blog blog
+Bloggy is a simple gem that helps you generate a jekyll blog within your rails application by using generator commands similar to the ones you are used to already.
 
 ## Installation
 
