@@ -6,7 +6,11 @@ rails g jekyll:blog
 
 wrote a new blog post and would like to re-generate. same thing 
 
-rails g jekyll:blog
+rails g jekyll:blog [directory name] - Note if you name this anything besides blog the urls will be generated wrong(I plan on fixing this in the next update however)
+
+so best way to get your blog up and running in seconds is
+
+    $ rails g jekyll:blog blog
 
 ## Installation
 
@@ -24,9 +28,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: This gem was written to show customers on Engine Yard how they could add a simple (and SEO friendly) blog to their existing rails application in no time.
+All config elements you are used to in your jekyll blog are still present (and tucked away nicely in your rails app)
 
-It was built on top of the Jekyll framework by <a href="http://tom.preston-werner.com/">Tom Preston-Warner</a> and uses the same config elements you're used to if you already use jekyll for blogging. Hope you enjoy!
+Once you run 
+    
+    $ rails g jekyll:blog blog
+
+you will find the folders you are used to for creating jekyll blog posts inside of the config/jekyll directory. There you can add add the same commands you are used to provided at the <a href="https://github.com/mojombo/jekyll/wiki/Configuration">Jekyll configuration page</a>, so now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
+
+Your posts will be served from the public/blog directory inside of your rails application. After you write a new blog post simply run the 
+
+    $ rails g jekyll:blog blog 
+
+command again and the new static files will be generated and ready to be re-deployed and served as static assets by your server!
+
+Some changes are sure to come as I explore and use this on my own, but for now I feel it is a good start and a step in the right direction for quickly and easily adding a blog to your application while keeping costs low. If you have questions or would just like to get in touch you can do so by <a href="http://zachbruhnke.com/contact">contacting me here</a>. Thanks for trying out Bloggy and please feel free to fork and contribute!
+
+
+This gem was originally crafted with love by <a href="http://zachbruhnke.com/">Zach Bruhnke</a> and was created to show customers on Engine Yard how they could add a simple (and SEO friendly) blog to their existing rails application in no time and save extra time and configuration steps for custom setups that save money.
+
+Bloggy was built on top of the Jekyll framework written by <a href="http://tom.preston-werner.com/">Tom Preston-Warner</a> and uses the same config elements you're used to if you already use jekyll for blogging. The default design I included also came from Tom(clearly I am not much of a designer). Thankfully he provided them under the MIT license for us all to use. Hope you enjoy Bloggy and find it useful for your endeavors.
 
 ## Contributing
 
