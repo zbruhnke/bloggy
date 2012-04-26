@@ -18,5 +18,6 @@ class Jekyll::PostsGenerator < Rails::Generators::NamedBase
       puts "------------------------------------"
       puts e.message
       exit(1)
+    end
   end
 end
