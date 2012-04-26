@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.email         = ["z@zbruhnke.com"]
   s.description   = %q{Jekyll blog for existing Rails application}
   s.summary       = %q{generate jekyll blog within a rails apps}
-  s.homepage      = ""
+  s.homepage      = "http://github.com/zbruhnke/bloggy"
 
   s.files         = `git ls-files`.split($\)
   s.executables   = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -54,7 +54,6 @@ Gem::Specification.new do |s|
     lib/generators/jekyll/blog/templates/config/jekyll/_layouts/page.html.tt
     lib/generators/jekyll/blog/templates/config/jekyll/_layouts/post.html.tt
     lib/generators/jekyll/blog/templates/config/jekyll/_posts/2012-04-25-a-test-post.markdown.tt
-    lib/generators/jekyll/blog/templates/config/jekyll/about.html.tt
     lib/generators/jekyll/blog/templates/config/jekyll/atom.xml.tt
     lib/generators/jekyll/blog/templates/config/jekyll/index.html.tt
     lib/bloggy.rb
