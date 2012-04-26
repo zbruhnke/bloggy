@@ -49,7 +49,6 @@ Gem::Specification.new do |s|
     bloggy.gemspec
     lib/generators/jekyll/blog/USAGE
     lib/generators/jekyll/blog/blog_generator.rb
-    lib/generators/jekyll/posts.rb
     lib/generators/jekyll/blog/templates/config/jekyll/_config.yml.tt
     lib/generators/jekyll/blog/templates/config/jekyll/_layouts/default.html.tt
     lib/generators/jekyll/blog/templates/config/jekyll/_layouts/page.html.tt
