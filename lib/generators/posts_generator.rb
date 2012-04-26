@@ -1,5 +1,5 @@
 class Jekyll::PostsGenerator < Rails::Generators::NamedBase
-    source_root File.expand_path('../config/jekyll/blog/templates', __FILE__)
+    source_root File.expand_path('../config/jekyll/blog/_posts', __FILE__)
 
   def create_blog source = 'config/jekyll', destination = 'public/blog'
     options = {
