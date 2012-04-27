@@ -1,4 +1,5 @@
 #!/usr/bin/env rake
-require "bundler/gem_tasks"
+load 'lib/tasks/new_post.rake'
 
-Dir.glob('tasks/*.rake').each { |r| import r }
+$LOAD_PATH.unshift 'lib'
+require 'bloggy/tasks'
