@@ -56,6 +56,8 @@ Gem::Specification.new do |s|
     lib/generators/jekyll/blog/templates/config/jekyll/_posts/2012-04-25-a-test-post.markdown.tt
     lib/generators/jekyll/blog/templates/config/jekyll/atom.xml.tt
     lib/generators/jekyll/blog/templates/config/jekyll/index.html.tt
+    lib/generators/jekyll/blog/templates/config/jekyll/css/screen.css.tt
+    lib/generators/jekyll/blog/templates/config/jekyll/css/sntax.css.tt
     lib/bloggy.rb
     lib/bloggy/version.rb
     test/helper.rb
