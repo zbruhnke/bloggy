@@ -2,6 +2,7 @@ require 'rubygems'
 require 'optparse'
 require 'yaml'
 
+desc "create new post with textmate"
 task :np do
   OptionParser.new.parse!
   ARGV.shift
