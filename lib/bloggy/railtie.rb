@@ -3,7 +3,7 @@ require 'rails'
 module Bloggy
   class Railtie < Rails::Railtie
     rake_tasks do
-      load 'lib/tasks/*.rake'
+      Dir[File.join(File.dirname(__FILE__),'lib/tasks/*.rake')].each { |f| load f }
     end
   end
 end
