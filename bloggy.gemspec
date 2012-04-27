@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "bloggy"
 
   s.files         = `git ls-files`.split("\n")
-  #s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
@@ -41,28 +41,5 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
-
-  # = MANIFEST =
-  s.files = %w[
-    Gemfile
-    Rakefile
-    bloggy.gemspec
-    lib/generators/jekyll/blog/USAGE
-    lib/generators/jekyll/blog/blog_generator.rb
-    lib/generators/jekyll/blog/templates/config/jekyll/_config.yml.tt
-    lib/generators/jekyll/blog/templates/config/jekyll/_layouts/default.html.tt
-    lib/generators/jekyll/blog/templates/config/jekyll/_layouts/page.html.tt
-    lib/generators/jekyll/blog/templates/config/jekyll/_layouts/post.html.tt
-    lib/generators/jekyll/blog/templates/config/jekyll/_posts/2012-04-25-a-test-post.markdown.tt
-    lib/generators/jekyll/blog/templates/config/jekyll/atom.xml.tt
-    lib/generators/jekyll/blog/templates/config/jekyll/index.html.tt
-    lib/generators/jekyll/blog/templates/config/jekyll/css/screen.css
-    lib/generators/jekyll/blog/templates/config/jekyll/css/sntax.css
-    lib/bloggy.rb
-    lib/bloggy/version.rb
-    test/helper.rb
-    test/test_generate_blog.rb
-  ]
-  # = MANIFEST =
   
 end
