@@ -5,8 +5,8 @@ require "bloggy/version"
 Gem::Specification.new do |s|
   s.authors       = ["Zach Bruhnke"]
   s.email         = ["z@zbruhnke.com"]
-  s.description   = %q{Jekyll blog for existing Rails application}
-  s.summary       = %q{generate jekyll blog within a rails apps}
+  s.description   = %q{Add a Jekyll blog to an existing Rails application in seconds}
+  s.summary       = %q{generate a jekyll blog within a rails application quickly and easily. No additonal nginx config required}
   s.homepage      = "http://github.com/zbruhnke/bloggy"
 
   s.files         = `git ls-files`.split($\)
