@@ -1,4 +1,4 @@
 #!/usr/bin/env rake
 require "bundler/gem_tasks"
 
-import 'lib/tasks/new_post'
+Dir.glob('tasks/*.rake').each { |r| import r }
