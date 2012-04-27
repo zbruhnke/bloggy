@@ -5,7 +5,7 @@ require "bloggy/version"
 module Jekyll
   module Rails
     module Bloggy
-      import 'lib/bloggy/railtie' if defined?(Rails)
+      require 'bloggy/railtie' if defined?(Rails)
     end
   end
 end
