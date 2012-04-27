@@ -32,7 +32,7 @@ Your posts will be served from the public/blog directory inside of your rails ap
 
 The new static files will be generated and ready to be re-deployed and served as static assets by your server!
 
-**I know this is not ideal and will probably make a rake task etc. for this in a later version but this is an early push and should take care of most of the dirty work**
+**I know this is not ideal and will probably make a rake task etc. for creating and generating the posts in a later version but this is an early push and should take care of most of the dirty work**
 
 **Make sure to note that if you run the generator more than once it will attempt to overwrite any changes you have made in the config/jekyll directory. Do not run the generator again**
 
