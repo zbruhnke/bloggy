@@ -26,9 +26,7 @@ Once you run
 
 you will find the folders you are used to for creating jekyll blog posts inside of the config/jekyll directory. There you can add add the same commands you are used to provided at the <a href="https://github.com/mojombo/jekyll/wiki/Configuration">Jekyll configuration page</a>, so now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
 
-I have provided a rake tasks to name and open your file in textmate as default but feel free to change it to use the editor of your choice.
-
-You can create that new post by running
+I have provided a rake tasks to name and open your file in textmate as default but feel free to change it to use the editor of your choice. To use it just run
 
     $ rake np post-title
 
