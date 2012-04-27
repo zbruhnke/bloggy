@@ -26,11 +26,15 @@ Once you run
 
 you will find the folders you are used to for creating jekyll blog posts inside of the config/jekyll directory. There you can add add the same commands you are used to provided at the <a href="https://github.com/mojombo/jekyll/wiki/Configuration">Jekyll configuration page</a>, so now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
 
-Your posts will be served from the public/blog directory inside of your rails application. After you write a new blog post simply run the 
+Your posts will be served from the public/blog directory inside of your rails application. After you write a new blog post simply cd into the config/jekyll directory and then run 
 
-    $ rails g jekyll:blog blog 
+    $ jekyll
 
-command again and the new static files will be generated and ready to be re-deployed and served as static assets by your server!
+The new static files will be generated and ready to be re-deployed and served as static assets by your server!
+
+**I know this is not ideal and will probably make a rake task etc. for this in a later version but this is an early push and should take care of most of the dirty work**
+
+**Make sure to note that if you run the generator more than once it will attempt to overwrite any changes you have made in the config/jekyll directory. Do not run the generator again**
 
 Some changes are sure to come as I explore and use this on my own, but for now I feel it is a good start and a step in the right direction for quickly and easily adding a blog to your application while keeping costs low. If you have questions or would just like to get in touch you can do so by <a href="http://zachbruhnke.com/contact">contacting me here</a>. Thanks for trying out Bloggy and please feel free to fork and contribute!
 
