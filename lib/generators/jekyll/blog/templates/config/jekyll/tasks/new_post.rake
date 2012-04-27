@@ -8,7 +8,7 @@ task :np do
   ARGV.shift
   title = ARGV.join(' ')
 
-  path = "../config/jekyll/_posts/#{Date.today}-#{title.downcase.gsub(/[^[:alnum:]]+/, '-')}.markdown"
+  path = "config/jekyll/_posts/#{Date.today}-#{title.downcase.gsub(/[^[:alnum:]]+/, '-')}.markdown"
   
   if File.exist?(path)
   	puts "[WARN] File exists - skipping create"
