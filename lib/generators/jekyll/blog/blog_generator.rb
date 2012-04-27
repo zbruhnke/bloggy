@@ -9,8 +9,8 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
         copy_file 'config/jekyll/_layouts/page.html.tt', 'config/jekyll/_layouts/page.html'
         copy_file 'config/jekyll/_layouts/post.html.tt', 'config/jekyll/_layouts/post.html'
         copy_file 'config/jekyll/_posts/2012-04-25-a-test-post.markdown.tt', 'config/jekyll/_posts/2012-04-25-a-test-post.markdown'
-        copy_file 'config/jekyll/css/screen.css.tt', 'config/jekyll/css/screen.css'
-        copy_file 'config/jekyll/css/syntax.css.tt', 'config/jekyll/css/syntax.css'
+        copy_file 'config/jekyll/css/screen.css', 'config/jekyll/css/screen.css'
+        copy_file 'config/jekyll/css/syntax.css', 'config/jekyll/css/syntax.css'
     end
 
     def create_blog source = 'config/jekyll', destination = 'public/blog'
