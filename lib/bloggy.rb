@@ -4,6 +4,9 @@ require "bloggy/version"
 
 module Jekyll
   module Rails
+    module Bloggy
+      require 'bloggy/railtie' if defined?(Rails)
+    end
   end
 end
 
