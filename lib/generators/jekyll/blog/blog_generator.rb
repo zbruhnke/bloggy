@@ -12,6 +12,7 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
         copy_file 'config/jekyll/css/screen.css', 'config/jekyll/css/screen.css'
         copy_file 'config/jekyll/css/syntax.css', 'config/jekyll/css/syntax.css'
         copy_file 'config/jekyll/tasks/new_post.rake', 'lib/tasks/new_post.rake'
+        copy_file 'config/jekyll/tasks/gen.rake', 'lib/tasks/gen.rake'
     end
 
     def create_blog source = 'config/jekyll', destination = 'public/blog'
