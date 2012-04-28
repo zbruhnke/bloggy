@@ -1,4 +1,5 @@
 desc 'Run Jekyll in config/jekyll directory without having to cd there'''
-task :dev do
+task :gen do
+  path = "config/jekyll"
   system('jekyll')
 end
