@@ -24,9 +24,9 @@ Once you run
     
     $ rails g jekyll:blog blog
 
-you will find the folders you are used to for creating jekyll blog posts inside of the config/jekyll directory. There you can add add the same commands you are used to provided at the <a href="https://github.com/mojombo/jekyll/wiki/Configuration">Jekyll configuration page</a>, so now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
+you will find the file structure you are used to seeing for creating blog posts, editing default layout etc. inside of the config/jekyll directory. There you can add add the same commands you would from a normal jekyll installation (they are provided at the <a href="https://github.com/mojombo/jekyll/wiki/Configuration">Jekyll configuration page</a>). So now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
 
-I have provided a rake task to name and open your file in textmate as default but feel free to change it to use the editor of your choice. To use it just run
+I have provided a rake task to name and open your new blog post in textmate as default but feel free to change it to use the editor of your choice. To use it just run
 
     $ rake np post-title
 
