@@ -1,5 +1,6 @@
 desc 'Run Jekyll in config/jekyll directory without having to cd there'''
 task :generate do
-  directory= 'config/jekyll'
-  system('jekyll')
+  Dir.chdir("config/jekyll") do
+    system('jekyll')
+  end
 end
