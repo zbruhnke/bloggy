@@ -1,5 +1,6 @@
 class Jekyll::BlogGenerator < Rails::Generators::NamedBase
     source_root File.expand_path('../templates', __FILE__)
+    argument :path, :type => :string, :default => "blog"
 
     def copy_config_file
         copy_file 'config/jekyll/_config.yml.tt', 'config/jekyll/_config.yml'
