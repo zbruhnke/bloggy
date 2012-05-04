@@ -22,7 +22,7 @@ All config elements you are used to in your jekyll blog are still present (and t
 
 Once you run 
     
-    $ rails g jekyll:blog blog
+    $ rails g jekyll:blog
 
 you will find the file structure you are used to seeing for creating blog posts, editing default layout etc. inside of the config/jekyll directory. There you can add add the same commands you would from a normal jekyll installation (they are provided at the <a href="https://github.com/mojombo/jekyll/wiki/Configuration">Jekyll configuration page</a>). So now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
 

@@ -4,6 +4,7 @@ Description:
 
 Example:
     rails generate jekyll:blog [NAME]
+    if you  choose not to add a name your files will be automatically generated to the public/blog directory
 
     This will create:
         public/[NAME]
