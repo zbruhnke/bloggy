@@ -11,14 +11,20 @@ task :np do
   path = "config/jekyll/_posts/#{Date.today}-#{title.downcase.gsub(/[^[:alnum:]]+/, '-')}.markdown"
   
   if File.exist?(path)
-  	puts "[WARN] File exists - skipping create"
+    puts "[WARN] File exists - skipping create"
   else
     File.open(path, "w") do |file|
       file.puts YAML.dump({'layout' => 'post', 'published' => false, 'title' => title})
       file.puts "---"
     end
   end
-  `mate #{path}`
+
+  if File.exist?("#{Dir.home}/.bloggyrc")
+    puts "[WARN] Found "#{Dir.home}/.bloggyrc"
+  else
+    puts "[WARN] Did not find "#{Dir.home}/.bloggyrc"
+    # `mate #{path}`
+  end
 
   exit 1
 end
