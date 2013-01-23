@@ -3,7 +3,7 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
     argument :name, :type => :string, :default => "blog"
 
     def copy_config_file
-        copy_file 'config/jekyll/_config.yml.tt', 'config/jekyll/_config.yml'
+        template  'config/jekyll/_config.yml.tt', 'config/jekyll/_config.yml'
         copy_file 'config/jekyll/atom.xml.tt', 'config/jekyll/atom.xml'
         template  'config/jekyll/index.html.tt', 'config/jekyll/index.html'
         template  'config/jekyll/_layouts/default.html.tt', 'config/jekyll/_layouts/default.html'

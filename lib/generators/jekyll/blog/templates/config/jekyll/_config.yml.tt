@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:title.html
-destination: "../../public/#{name}"
+destination: ../../public/<%= name %>
 auto: true
 exclude:
   - Rakefile
