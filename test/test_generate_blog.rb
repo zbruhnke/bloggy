@@ -11,7 +11,7 @@ require 'rails/generators/actions'
 
 class TestGenerateBlog < Test::Unit::TestCase
     context "creating blog" do
-        should "genearte blog" do
+        should "generate blog" do
             source = 'config/jekyll'
             destination = 'blog'
             #Rails::Generators::Actions.generate('jekyll', '')
