@@ -17,13 +17,22 @@ task :np do
       file.puts YAML.dump({'layout' => 'post', 'published' => false, 'title' => title})
       file.puts "---"
     end
-  end
 
-  if File.exist?("#{Dir.home}/.bloggyrc")
-    puts "[WARN] Found "#{Dir.home}/.bloggyrc"
-  else
-    puts "[WARN] Did not find "#{Dir.home}/.bloggyrc"
-    # `mate #{path}`
+    begin
+      config = {'editor' => 'mate'}
+      if File.exist?("#{Dir.home}/.bloggyrc")
+        config.merge!(YAML.load_file("#{Dir.home}/.bloggyrc"))
+      end
+    rescue TypeError
+      puts "[WARN] Failed to parse editor from .bloggyrc"
+    end
+    
+    begin
+    `#{config['editor']} #{path}`
+    rescue Exception
+      puts "[WARN] Could not find editor #{config['editor']} - please edit #{path} manually"
+    end
+
   end
 
   exit 1
