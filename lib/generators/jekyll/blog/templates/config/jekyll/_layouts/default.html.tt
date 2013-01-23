@@ -6,10 +6,10 @@
    <meta name="author" content="Zach Bruhnke" />
 
    <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/blog/css/syntax.css" type="text/css" />
+   <link rel="stylesheet" href="/<%= name %>/css/syntax.css" type="text/css" />
 
    <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/blog/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/<%= name %>/css/screen.css" type="text/css" media="screen, projection" />
 
    <!-- Typekit -->
    <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
@@ -25,8 +25,8 @@ var WRInitTime=(new Date()).getTime();
 
 <div class="site">
   <div class="title">
-    <a href="/blog">Zach Bruhnke</a>
-    <a class="extra" href="/blog">Bloggy</a>
+    <a href="/<%= name %>">Zach Bruhnke</a>
+    <a class="extra" href="/<%= name %>">Bloggy</a>
   </div>
   
   {{ content }}
