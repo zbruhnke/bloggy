@@ -3,12 +3,12 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
     argument :name, :type => :string, :default => "blog"
 
     def copy_config_file
-        copy_file 'config/jekyll/_config.yml.tt', 'config/jekyll/_config.yml'
+        template  'config/jekyll/_config.yml.tt', 'config/jekyll/_config.yml'
         copy_file 'config/jekyll/atom.xml.tt', 'config/jekyll/atom.xml'
-        copy_file 'config/jekyll/index.html.tt', 'config/jekyll/index.html'
-        copy_file 'config/jekyll/_layouts/default.html.tt', 'config/jekyll/_layouts/default.html'
+        template  'config/jekyll/index.html.tt', 'config/jekyll/index.html'
+        template  'config/jekyll/_layouts/default.html.tt', 'config/jekyll/_layouts/default.html'
+        template  'config/jekyll/_layouts/post.html.tt', 'config/jekyll/_layouts/post.html'
         copy_file 'config/jekyll/_layouts/page.html.tt', 'config/jekyll/_layouts/page.html'
-        copy_file 'config/jekyll/_layouts/post.html.tt', 'config/jekyll/_layouts/post.html'
         copy_file 'config/jekyll/_posts/2012-04-25-a-test-post.markdown.tt', 'config/jekyll/_posts/2012-04-25-a-test-post.markdown'
         copy_file 'config/jekyll/css/screen.css.tt', 'config/jekyll/css/screen.css'
         copy_file 'config/jekyll/css/syntax.css.tt', 'config/jekyll/css/syntax.css'
@@ -16,7 +16,7 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
         copy_file 'tasks/gen.rake.tt', 'lib/tasks/gen.rake'
     end
 
-    def create_blog source = 'config/jekyll', destination = 'public/blog'
+    def create_blog source = 'config/jekyll', destination = File.join('public',"#{name}")
         options = {
             'source' => source,
             'destination' => destination
