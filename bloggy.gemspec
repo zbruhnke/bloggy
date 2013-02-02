@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "bloggy/version"
 
 Gem::Specification.new do |s|
-  s.authors       = ["Zach Bruhnke"]
+  s.authors       = ["Zach Bruhnke", "Eric Thiese"]
   s.email         = ["z@zbruhnke.com"]
   s.description   = %q{Add a Jekyll blog to an existing Rails application in seconds}
   s.summary       = %q{generate a jekyll blog within a rails application quickly and easily. No additional nginx config required}
