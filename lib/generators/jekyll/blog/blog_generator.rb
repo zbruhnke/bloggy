@@ -1,12 +1,13 @@
 class Jekyll::BlogGenerator < Rails::Generators::NamedBase
     source_root File.expand_path('../templates', __FILE__)
     argument :name, :type => :string, :default => "blog"
-
+    
     def copy_config_file
         template  'config/jekyll/_config.yml.tt', 'config/jekyll/_config.yml'
         copy_file 'config/jekyll/atom.xml.tt', 'config/jekyll/atom.xml'
         template  'config/jekyll/index.html.tt', 'config/jekyll/index.html'
-        template  'config/jekyll/_layouts/default.html.tt', 'config/jekyll/_layouts/default.html'
+        template 'config/Controllers/blog_controller.rb.tt', 'app/controllers/blog_controller.rb'
+        #template  'config/jekyll/_layouts/default.html.tt', 'config/jekyll/_layouts/default.html'
         template  'config/jekyll/_layouts/post.html.tt', 'config/jekyll/_layouts/post.html'
         copy_file 'config/jekyll/_layouts/page.html.tt', 'config/jekyll/_layouts/page.html'
         copy_file 'config/jekyll/_posts/2012-04-25-a-test-post.markdown.tt', 'config/jekyll/_posts/2012-04-25-a-test-post.markdown'
@@ -16,7 +17,7 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
         copy_file 'tasks/gen.rake.tt', 'lib/tasks/gen.rake'
     end
 
-    def create_blog source = 'config/jekyll', destination = File.join('public',"#{name}")
+    def create_blog source = 'config/jekyll', destination = File.join('app/views/blog')
         options = {
             'source' => source,
             'destination' => destination
@@ -35,5 +36,12 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
           exit(1)
         end
         puts "Successfully generated site: #{source} -> #{destination}"
+    end
+    
+    def blog_routes
+      open('config/routes.rb', 'a') { |f|
+        f.puts "match 'blog' => 'blog#index'"
+        f.puts "match 'blog/:title' => 'blog#post'"
+      }
     end
 end
