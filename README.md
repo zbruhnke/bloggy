@@ -20,15 +20,15 @@ Or install it yourself as:
 
 All config elements you are used to in your jekyll blog are still present (and tucked away nicely in your rails app)
 
-Once you run 
-    
+Once you run
+
     $ rails g jekyll:blog
 
 you will find the file structure you are used to seeing for creating blog posts, editing default layout etc. inside of the config/jekyll directory. There you can add add the same commands you would from a normal jekyll installation (they are provided at the <a href="https://github.com/mojombo/jekyll/wiki/Configuration">Jekyll configuration page</a>). So now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
 
 I have provided a rake task to name and open your new blog post for editing. To use it just run
 
-    $ rake np post-title
+    $ bundle exec rake np post-title
 
 By default, your post will open in textmate, but you can override this by creating a .bloggyrc file in your home directory, containing the command line invocation of your editor.
 
@@ -37,7 +37,7 @@ By default, your post will open in textmate, but you can override this by creati
 
 Your posts will be served from the public/blog directory inside of your rails application. After you write a new blog post simply run
 
-    $ rake generate
+    $ bundle exec rake generate
 
 And the new static files will be generated and ready to be re-deployed and served as static assets by your server!
 
