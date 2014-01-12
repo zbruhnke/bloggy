@@ -35,7 +35,7 @@ var WRInitTime=(new Date()).getTime();
     <div class="contact">
       <p>
         Zach Bruhnke<br />
-        Fine me on <a href="http://zbruhnke.com">My Blog</a><br />
+        Find me on <a href="http://zbruhnke.com">My Blog</a><br />
         z@zbruhnke.com
       </p>
     </div>
