@@ -24,7 +24,7 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
         source_dir = 'config/jekyll'
         options = Jekyll.configuration(options)
         site = Jekyll::Site.new(options)
-        
+
         begin
           site.process
         rescue Jekyll::FatalException => e
