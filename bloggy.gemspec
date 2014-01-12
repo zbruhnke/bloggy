@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.name          = "bloggy"
   s.require_paths = ["lib"]
   s.version       = Bloggy::VERSION
-  
+
   s.rubyforge_project = "bloggy"
 
   s.files         = `git ls-files`.split("\n")
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency "jekyll", "~> 1.1.2"
+  s.add_dependency "jekyll", "~> 1.4.2"
   s.add_dependency "rdiscount"
   s.add_dependency "rails"
   s.add_dependency "rack-contrib"
@@ -41,5 +41,5 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
-  
+
 end

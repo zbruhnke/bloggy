@@ -28,15 +28,15 @@ var WRInitTime=(new Date()).getTime();
     <a href="/<%= name %>">Zach Bruhnke</a>
     <a class="extra" href="/<%= name %>">Bloggy</a>
   </div>
-  
+
   {{ content }}
-  
+
   <div class="footer">
     <div class="contact">
       <p>
         Zach Bruhnke<br />
-        Works at <a href="http://engineyard.com">EngineYard</a><br />
-        zbruhnke@engineyard.com
+        Find me on <a href="http://zbruhnke.com">My Blog</a><br />
+        z@zbruhnke.com
       </p>
     </div>
     <div class="contact">

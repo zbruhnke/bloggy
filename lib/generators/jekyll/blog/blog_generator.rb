@@ -9,7 +9,7 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
         template  'config/jekyll/_layouts/default.html.tt', 'config/jekyll/_layouts/default.html'
         template  'config/jekyll/_layouts/post.html.tt', 'config/jekyll/_layouts/post.html'
         copy_file 'config/jekyll/_layouts/page.html.tt', 'config/jekyll/_layouts/page.html'
-        copy_file 'config/jekyll/_posts/2012-04-25-a-test-post.markdown.tt', 'config/jekyll/_posts/2012-04-25-a-test-post.markdown'
+        copy_file 'config/jekyll/_posts/2014-01-11-a-test-post.markdown.tt', 'config/jekyll/_posts/2014-01-11-a-test-post.markdown'
         copy_file 'config/jekyll/css/screen.css.tt', 'config/jekyll/css/screen.css'
         copy_file 'config/jekyll/css/syntax.css.tt', 'config/jekyll/css/syntax.css'
         copy_file 'tasks/new_post.rake.tt', 'lib/tasks/new_post.rake'
@@ -24,7 +24,7 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
         source_dir = 'config/jekyll'
         options = Jekyll.configuration(options)
         site = Jekyll::Site.new(options)
-        
+
         begin
           site.process
         rescue Jekyll::FatalException => e
