@@ -24,7 +24,7 @@ Once you run
 
     $ rails g jekyll:blog
 
-you will find the file structure you are used to seeing for creating blog posts, editing default layout etc. inside of the config/jekyll directory. There you can add add the same commands you would from a normal jekyll installation (they are provided at the <a href="https://github.com/mojombo/jekyll/wiki/Configuration">Jekyll configuration page</a>). So now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
+you will find the file structure you are used to seeing for creating blog posts, editing default layout etc. inside of the config/jekyll directory. There you can add add the same commands you would from a normal jekyll installation (they are provided at the [Jekyll configuration page](http://jekyllrb.com/docs/configuration/)). So now just configure to your liking. (edit the default.html inside of _layouts for your main page and the post.html and page.html files for the corresponding results).
 
 I have provided a rake task to name and open your new blog post for editing. To use it just run
 
@@ -41,12 +41,12 @@ Your posts will be served from the public/blog directory inside of your rails ap
 
 And the new static files will be generated and ready to be re-deployed and served as static assets by your server!
 
-Some changes are sure to come as I explore and use this on my own, but for now I feel it is a good start and a step in the right direction for quickly and easily adding a blog to your application while keeping costs low. If you have questions or would just like to get in touch you can do so by <a href="http://zachbruhnke.com/contact">contacting me here</a>. Thanks for trying out Bloggy and please feel free to fork and contribute!
+Some changes are sure to come as I explore and use this on my own, but for now I feel it is a good start and a step in the right direction for quickly and easily adding a blog to your application while keeping costs low. If you have questions or would just like to get in touch you can do so by [contacting me here](http://zachbruhnke.com/contact). Thanks for trying out Bloggy and please feel free to fork and contribute!
 
 
-This gem was originally crafted with love by <a href="http://zachbruhnke.com/">Zach Bruhnke</a> and was created to show customers on Engine Yard how they could add a simple (and SEO friendly) blog to their existing rails application in no time and save extra time and configuration steps for custom setups that save money.
+This gem was originally crafted with love by [Zach Bruhnke](http://zachbruhnke.com/) and was created to show customers on Engine Yard how they could add a simple (and SEO friendly) blog to their existing rails application in no time and save extra time and configuration steps for custom setups that save money.
 
-Bloggy was built on top of the Jekyll framework written by <a href="http://tom.preston-werner.com/">Tom Preston-Warner</a> and uses the same config elements you're used to if you already use jekyll for blogging. The default design I included also came from Tom(clearly I am not much of a designer). Thankfully he provided them under the MIT license for us all to use. Hope you enjoy Bloggy and find it useful for your endeavors.
+Bloggy was built on top of the Jekyll framework written by [Tom Preston-Warner](http://tom.preston-werner.com/) and uses the same config elements you're used to if you already use jekyll for blogging. The default design I included also came from Tom (clearly I am not much of a designer). Thankfully he provided them under the MIT license for us all to use. Hope you enjoy Bloggy and find it useful for your endeavors.
 
 ## Contributing
 
