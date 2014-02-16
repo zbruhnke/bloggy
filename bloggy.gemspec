@@ -24,22 +24,15 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "jekyll", "~> 1.4.2"
-  s.add_dependency "rdiscount"
   s.add_dependency "rails"
   s.add_dependency "rack-contrib"
 
-  s.add_development_dependency('rake', "~> 0.9")
-  s.add_development_dependency('rdoc', "~> 3.11")
-  s.add_development_dependency('redgreen', "~> 1.2")
-  s.add_development_dependency('shoulda', "~> 2.11")
-  s.add_development_dependency('rr', "~> 1.0")
-  s.add_development_dependency('cucumber', "1.1")
-  s.add_development_dependency('RedCloth', "~> 4.2")
-  s.add_development_dependency('rdiscount', "~> 1.6")
-  s.add_development_dependency('redcarpet', "~> 1.9")
+  s.add_development_dependency 'rake', "~> 10.1"
+  s.add_development_dependency 'rdoc', "~> 4.1"
+  s.add_development_dependency 'redgreen', "~> 1.2"
+  s.add_development_dependency 'RedCloth', "~> 4.2"
+  s.add_development_dependency 'redcarpet', "~> 2.3"
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_runtime_dependency 'rdiscount', "~> 1.6"
 
 end
