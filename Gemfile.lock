@@ -140,5 +140,5 @@ DEPENDENCIES
   bloggy!
   rake (~> 10.1)
   rdoc (~> 4.1)
-  redcarpet
+  redcarpet (~> 2.3)
   redgreen (~> 1.2)
