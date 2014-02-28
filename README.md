@@ -1,5 +1,7 @@
 # Bloggy
 
+[![Dependency Status](https://gemnasium.com/erictheise/bloggy.png)](https://gemnasium.com/erictheise/bloggy)
+
 Bloggy is a simple gem that helps you generate a jekyll blog within your rails application by using generator commands similar to the ones you are used to already.
 
 ## Installation
