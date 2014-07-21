@@ -48,7 +48,7 @@ Some changes are sure to come as I explore and use this on my own, but for now I
 
 This gem was originally crafted with love by [Zach Bruhnke](http://zachbruhnke.com/) and was created to show customers on Engine Yard how they could add a simple (and SEO friendly) blog to their existing rails application in no time and save extra time and configuration steps for custom setups that save money.
 
-Bloggy was built on top of the Jekyll framework written by [Tom Preston-Warner](http://tom.preston-werner.com/) and uses the same config elements you're used to if you already use jekyll for blogging. The default design I included also came from Tom (clearly I am not much of a designer). Thankfully he provided them under the MIT license for us all to use. Hope you enjoy Bloggy and find it useful for your endeavors.
+Bloggy was built on top of the Jekyll framework written by [Tom Preston-Werner](http://tom.preston-werner.com/) and uses the same config elements you're used to if you already use jekyll for blogging. The default design I included also came from Tom (clearly I am not much of a designer). Thankfully he provided them under the MIT license for us all to use. Hope you enjoy Bloggy and find it useful for your endeavors.
 
 ## Contributing
 
