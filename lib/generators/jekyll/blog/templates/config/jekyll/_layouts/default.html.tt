@@ -12,7 +12,7 @@
    <link rel="stylesheet" href="/<%= name %>/css/screen.css" type="text/css" media="screen, projection" />
 
    <!-- Typekit -->
-   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
+   <script type="text/javascript" src="https://use.typekit.com/jpd0pfm.js"></script>
    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
@@ -41,15 +41,15 @@ var WRInitTime=(new Date()).getTime();
     </div>
     <div class="contact">
       <p>
-        <a href="http://github.com/zbruhnke/">github.com/zbruhnke</a><br />
-        <a href="http://twitter.com/zbruhnke/">twitter.com/zbruhnke</a><br />
-        <a href="http://facebook.com/zbruhnke">facebook.com/zbruhnke</a>
+        <a href="https://github.com/zbruhnke/">github.com/zbruhnke</a><br />
+        <a href="https://twitter.com/zbruhnke/">twitter.com/zbruhnke</a><br />
+        <a href="https://facebook.com/zbruhnke">facebook.com/zbruhnke</a>
       </p>
     </div>
   </div>
 </div>
 
-<a href="https://github.com/zbruhnke/bloggy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+<a href="https://github.com/zbruhnke/bloggy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 
 <!-- ClickTale Bottom part -->
 <div id="ClickTaleDiv" style="display: none;"></div>
