@@ -41,7 +41,7 @@ Your posts will be served from the public/blog directory inside of your rails ap
 
     $ bundle exec rake generate
 
-And the new static files will be generated and ready to be re-deployed and served as static assets by your server!
+And the new static files will be generated and ready to be re-deployed and served as static assets by your server! Be default, you can see your blog at /blog.
 
 Some changes are sure to come as I explore and use this on my own, but for now I feel it is a good start and a step in the right direction for quickly and easily adding a blog to your application while keeping costs low. If you have questions or would just like to get in touch you can do so by [contacting me here](http://zachbruhnke.com/contact). Thanks for trying out Bloggy and please feel free to fork and contribute!
 
