@@ -30,7 +30,7 @@ you will find the file structure you are used to seeing for creating blog posts,
 
 I have provided a rake task to name and open your new blog post for editing. To use it just run
 
-    $ bundle exec rake np post-title
+    $ bundle exec rake bloggy:np post-title
 
 By default, your post will open in textmate, but you can override this by creating a .bloggyrc file in your home directory, containing the command line invocation of your editor.
 
@@ -39,7 +39,7 @@ By default, your post will open in textmate, but you can override this by creati
 
 Your posts will be served from the public/blog directory inside of your rails application. After you write a new blog post simply run
 
-    $ bundle exec rake generate
+    $ bundle exec rake bloggy:generate
 
 And the new static files will be generated and ready to be re-deployed and served as static assets by your server! Be default, you can see your blog at /blog.
 
