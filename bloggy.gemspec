@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rack-contrib'
 
   s.add_development_dependency 'rake', '~> 10.1'
-  s.add_development_dependency 'rdoc', '~> 4.1'
+  s.add_development_dependency 'rdoc', '~> 6.4'
   s.add_development_dependency 'redgreen', '~> 1.2'
   s.add_development_dependency 'RedCloth', '~> 4.2'
   s.add_development_dependency 'redcarpet', '~> 2.3'
