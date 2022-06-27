@@ -157,7 +157,7 @@ GEM
       method_source
       rake (>= 0.13)
       thor (~> 1.0)
-    rake (10.1.1)
+    rake (13.0.6)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
@@ -193,7 +193,7 @@ PLATFORMS
 DEPENDENCIES
   RedCloth (~> 4.2)
   bloggy!
-  rake (~> 10.1)
+  rake (~> 13.0)
   rdoc (~> 4.1)
   redcarpet (~> 2.3)
   redgreen (~> 1.2)
